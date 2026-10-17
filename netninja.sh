@@ -62,15 +62,14 @@ clear
 
 echo -e "\033[1;32m"
 toilet -f mono12 --metal "NetNinja"
-echo -e "\033[1;31mNetworking made Simple!!                    By:Mhd.Akbar\033[0m"
-echo "version 2.0 , more tools will be added!!"
+echo -e "\033[1;31mNetworking made Simple!!                    By:Mhd.Akbar\nVersion 2.0, more tools will be added soon!!\033[0m"
 echo "select an option:"
 echo "[1] Network discovery"
 echo "[2] Port + Services"
 echo "[3] Quick scan"
 echo "[4] OS detection"
 echo "[5] UDP scan"
-echo "[6]Subnet calculator"
+echo "[6] Subnet calculator"
 echo "[7] Exit"
 echo "Enter a valid choice:"
 read choice
@@ -152,13 +151,9 @@ case $choice in
     echo "Total Hosts      : $total_hosts"
     ;;
 
-
-
-
-
-
-
-
+    7)
+    echo "Exiting..."
+    exit 1;;
 
     *)
         echo -e "\033[1;31mInvalid choice!\033[0m"
